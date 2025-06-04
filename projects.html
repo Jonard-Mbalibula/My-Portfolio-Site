@@ -1,46 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | Mbalibula Jonard</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>My Projects | Mbalibula Jonard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="subpage-header">
+  <nav>
     <div class="container">
-      <h1>My Projects</h1>
-      <p>Some of the work I've done as a developer and cybersecurity enthusiast.</p>
+      <a href="index.html" class="nav-logo">
+        <img src="me.webp" class="logo" alt="Mbalibula Jonard">
+      </a>
+      <h1>Mbalibula Jonard</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <header class="subpage-header">
+    <h1>Projects</h1>
+    <p>Here are some of my most impactful works</p>
   </header>
 
-  <section id="projects">
-    <div class="container">
-      <div class="project">
-        <h3>National Water Web Portal</h3>
-        <p>Developed a responsive frontend for tracking water usage and billing.</p>
-        <p><strong>Tech used:</strong> HTML, CSS, JavaScript, PHP</p>
+  <main>
+    <ul class="nav-links"></ul>
+    <section class="project-section">
+      <div class="container project-container">
+        <div class="project-card" style="background-image: url('bg1.jpg');">
+          <div class="project-content">
+            <h3>National Water Monitoring System</h3>
+            <p>A web application to track and report water usage and billing across districts.</p>
+            <a href="#" class="btn" aria-label="View National Water Monitoring System project details">View Project</a>
+          </div>
+        </div>
+        
       </div>
+    </section>
 
-      <div class="project">
-        <h3>NSSF Calculator</h3>
-        <p>Built a PHP-based tool to help users calculate their savings and benefits under NSSF rules.</p>
-        <p><strong>Tech used:</strong> PHP, HTML, CSS, MySQL</p>
+    <section class="project-section" id="nssf">
+      <div class="container project-container">
+        <div class="project-card" style="background-image: url('bg2.jpg');">
+          <div class="project-content">
+            <h3>NSSF Tax Calculator</h3>
+            <p>PHP-based application to calculate employee tax and benefits with CRUD support.</p>
+            <a href="#" class="btn" aria-label="View NSSF Tax Calculator project details">View Project</a>
+          </div>
+        </div>
+        
       </div>
+    </section>
 
-      <div class="project">
-        <h3>Cybersecurity Lab Dashboard</h3>
-        <p>Created a dashboard to manage and visualize penetration testing reports.</p>
-        <p><strong>Tech used:</strong> Laravel, Bootstrap, Chart.js</p>
+    <section class="project-section" id="acmis">
+      <div class="container project-container">
+        <div class="project-card" style="background-image: url('bg3.jpg');">
+          <div class="project-content">
+            <h3>ACMIS Info System</h3>
+            <p>Academic Management System for managing student records and course enrollment.</p>
+            <a href="#" class="btn" aria-label="View ACMIS Info System project details">View Project</a>
+          </div>
+        </div>
+        
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <div class="container">
+      <h2>Contact Details</h2>
+      <p>Email: <a href="mailto:mbalibulajonard@gmail.com">mbalibulajonard@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Jonard-Mbalibula" aria-label="View my GitHub profile">Jonard-Mbalibula</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/mbalibula-Jonard-Mbalibula" aria-label="View my LinkedIn profile">Mbalibula Jonard</a></p>
+      <p>Contact: <a href="tel:+256785700442">+256785700442</a> | <a href="tel:+256752922364">+256752922364</a></p>
       <p>&copy; 2025 Mbalibula Jonard. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
